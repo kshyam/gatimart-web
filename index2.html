@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gatimart – India's #1 Wholesale B2B Marketplace | Buy Direct from Manufacturers</title>
+  <meta name="description" content="Gatimart is India's largest wholesale marketplace connecting buyers with verified manufacturers, distributors, and suppliers. Get the best wholesale prices on electronics, textiles, FMCG, industrial goods and more. Trusted by 5 lakh+ businesses." />
+  <meta name="keywords" content="wholesale market india, b2b marketplace india, buy wholesale products, manufacturers india, bulk buying india, wholesale supplier india, business sourcing india, gatimart" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Gatimart" />
+  <link rel="canonical" href="https://www.gatimart.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gatimart – India's #1 Wholesale B2B Marketplace" />
+  <meta property="og:description" content="Source directly from verified Indian manufacturers. Best wholesale prices on 10 lakh+ products across 500+ categories." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.gatimart.com/" />
+  <meta property="og:image" content="https://www.gatimart.com/og-image.jpg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gatimart – India's #1 Wholesale B2B Marketplace" />
+  <meta name="twitter:description" content="Buy direct from verified manufacturers. Best prices. Secure payments. Pan-India delivery." />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Gatimart",
+    "url": "https://www.gatimart.com",
+    "logo": "https://www.gatimart.com/logo.png",
+    "description": "India's largest wholesale B2B marketplace connecting buyers with verified manufacturers and suppliers.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-1800-123-4567",
+      "contactType": "customer service",
+      "availableLanguage": ["Hindi", "English"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/gatimart",
+      "https://www.linkedin.com/company/gatimart",
+      "https://twitter.com/gatimart"
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: { 50:'#fff8ed',100:'#ffefd4',200:'#ffd9a8',300:'#ffbb71',400:'#ff9238',500:'#ff6f0f',600:'#f05006',700:'#c73b07',800:'#9e300e',900:'#7e290f' },
+            india: { 50:'#f0fdf4',100:'#dcfce7',500:'#22c55e',600:'#16a34a',700:'#15803d',800:'#166534',900:'#14532d' },
+            navy: { 50:'#eff6ff',500:'#3b82f6',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a',950:'#0f1f5c' }
+          },
+          fontFamily: {
+            display: ['"Baloo 2"', 'cursive'],
+            body: ['Hind', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { font-family: 'Hind', sans-serif; }
+    .font-display { font-family: 'Baloo 2', cursive; }
+
+    /* Hero gradient */
+    .hero-bg {
+      background: linear-gradient(135deg, #0f1f5c 0%, #1a3a7c 40%, #c73b07 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 70%;
+      height: 200%;
+      background: radial-gradient(ellipse, rgba(255,111,15,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 60px;
+      background: white;
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+
+    /* Trust badge stripe */
+    .stripe-bg { background: linear-gradient(90deg, #ff6f0f, #c73b07); }
+
+    /* Category card hover */
+    .cat-card { transition: all 0.28s cubic-bezier(.4,0,.2,1); }
+    .cat-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(15,31,92,0.15); }
+
+    /* Product card */
+    .prod-card { transition: all 0.25s ease; }
+    .prod-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0,0,0,0.12); }
+
+    /* Ticker */
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker-inner { animation: ticker 28s linear infinite; }
+    .ticker-inner:hover { animation-play-state: paused; }
+
+    /* Pulse dot */
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.4)} }
+    .pulse-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
+
+    /* Fade up */
+    @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+    .fade-up { opacity: 0; animation: fadeUp 0.65s ease forwards; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.22s; }
+    .delay-3 { animation-delay: 0.34s; }
+    .delay-4 { animation-delay: 0.46s; }
+    .delay-5 { animation-delay: 0.58s; }
+
+    /* Gradient text */
+    .text-gradient {
+      background: linear-gradient(90deg, #ff6f0f, #ffd9a8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Nav scroll shadow */
+    .nav-scrolled { box-shadow: 0 4px 24px rgba(15,31,92,0.12); }
+
+    /* Marquee stop on hover */
+    .marquee-wrap:hover .ticker-inner { animation-play-state: paused; }
+
+    /* CTA button */
+    .btn-saffron {
+      background: linear-gradient(90deg, #ff6f0f, #f05006);
+      transition: all 0.22s;
+      box-shadow: 0 4px 16px rgba(240,80,6,0.35);
+    }
+    .btn-saffron:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,80,6,0.45); }
+
+    .btn-outline-white {
+      border: 2px solid rgba(255,255,255,0.7);
+      transition: all 0.22s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.12); border-color: white; }
+
+    /* Section heading underline */
+    .section-heading::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff6f0f, #c73b07);
+      border-radius: 2px;
+      margin-top: 10px;
+    }
+
+    /* Stats counter */
+    .stat-card { background: linear-gradient(135deg, #fff 60%, #fff8ed 100%); }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #ff6f0f; border-radius: 3px; }
+
+    /* Mobile menu */
+    #mobile-menu { transition: all 0.3s ease; }
+
+    /* How it works steps */
+    .step-line::after {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: calc(50% + 28px);
+      width: calc(100% - 56px);
+      height: 2px;
+      background: linear-gradient(90deg, #ff6f0f, #ffd9a8);
+      z-index: 0;
+    }
+    @media(max-width:768px) { .step-line::after { display:none; } }
+
+    /* Testimonial card */
+    .testi-card { border-left: 4px solid #ff6f0f; }
+
+    /* Verified badge */
+    .verified-badge { background: linear-gradient(90deg, #16a34a, #22c55e); }
+
+    /* Search bar */
+    .search-bar:focus-within { box-shadow: 0 0 0 3px rgba(255,111,15,0.25); }
+
+    /* Flag color bar */
+    .flag-bar {
+      background: linear-gradient(90deg, #ff9933 33.33%, white 33.33%, white 66.66%, #138808 66.66%);
+      height: 4px;
+    }
+
+    /* Glow on hover for icons */
+    .icon-glow:hover { filter: drop-shadow(0 0 8px rgba(255,111,15,0.6)); }
+
+    /* Category emoji cards */
+    .emoji-card {
+      background: white;
+      border: 2px solid transparent;
+      background-clip: padding-box;
+      transition: all 0.25s;
+    }
+    .emoji-card:hover { border-color: #ff6f0f; background: #fff8ed; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- ===================== TOP FLAG BAR ===================== -->
+<div class="flag-bar w-full"></div>
+
+<!-- ===================== ANNOUNCEMENT TICKER ===================== -->
+<div class="bg-navy-950 text-white text-xs py-1.5 overflow-hidden marquee-wrap" style="background:#0f1f5c;">
+  <div class="ticker-inner flex whitespace-nowrap gap-12" style="width:max-content;">
+    <span>🚀 Free Pan-India Shipping on Orders Above ₹5,000</span>
+    <span>•</span>
+    <span>✅ 5 Lakh+ Verified Suppliers Across India</span>
+    <span>•</span>
+    <span>🎯 Bulk Order Discounts Up to 60% Off MRP</span>
+    <span>•</span>
+    <span>🏭 Direct from Factory Prices – No Middlemen</span>
+    <span>•</span>
+    <span>📦 GST Invoice Available for All Orders</span>
+    <span>•</span>
+    <span>🔒 100% Secure Payments – RBI Compliant</span>
+    <span>•</span>
+    <span>🚀 Free Pan-India Shipping on Orders Above ₹5,000</span>
+    <span>•</span>
+    <span>✅ 5 Lakh+ Verified Suppliers Across India</span>
+    <span>•</span>
+    <span>🎯 Bulk Order Discounts Up to 60% Off MRP</span>
+    <span>•</span>
+    <span>🏭 Direct from Factory Prices – No Middlemen</span>
+    <span>•</span>
+    <span>📦 GST Invoice Available for All Orders</span>
+    <span>•</span>
+    <span>🔒 100% Secure Payments – RBI Compliant</span>
+  </div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav id="navbar" class="bg-white sticky top-0 z-50 transition-shadow duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 gap-3">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 shrink-0">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-display font-bold text-lg" style="background:linear-gradient(135deg,#ff6f0f,#c73b07);">G</div>
+        <span class="font-display font-bold text-xl" style="color:#0f1f5c;">Gati<span style="color:#ff6f0f;">mart</span></span>
+      </a>
+
+      <!-- Search Bar (desktop) -->
+      <div class="hidden md:flex flex-1 max-w-2xl mx-4">
+        <div class="search-bar flex w-full rounded-xl overflow-hidden border-2 border-gray-200 bg-white transition-all">
+          <select class="bg-gray-50 border-r border-gray-200 text-sm px-3 py-2 text-gray-600 focus:outline-none shrink-0">
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Textiles</option>
+            <option>FMCG</option>
+            <option>Industrial</option>
+            <option>Agriculture</option>
+          </select>
+          <input type="search" placeholder="Search products, suppliers, categories..." class="flex-1 px-4 py-2.5 text-sm focus:outline-none" />
+          <button class="btn-saffron text-white px-5 py-2.5 text-sm font-semibold shrink-0">
+            🔍 Search
+          </button>
+        </div>
+      </div>
+
+      <!-- Nav Links (desktop) -->
+      <div class="hidden lg:flex items-center gap-5 shrink-0">
+        <a href="#categories" class="text-sm font-medium text-gray-700 hover:text-saffron-600 transition-colors">Categories</a>
+        <a href="#suppliers" class="text-sm font-medium text-gray-700 hover:text-saffron-600 transition-colors">Suppliers</a>
+        <a href="#how-it-works" class="text-sm font-medium text-gray-700 hover:text-saffron-600 transition-colors">How It Works</a>
+        <a href="#" class="text-sm font-medium text-gray-700 hover:text-saffron-600 transition-colors">Post Requirement</a>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="hidden md:flex items-center gap-2 shrink-0">
+        <a href="#" class="text-sm font-semibold text-saffron-600 hover:text-saffron-700 px-3 py-2">Sign In</a>
+        <a href="#" class="btn-saffron text-white text-sm font-semibold px-4 py-2.5 rounded-xl">Start Selling</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button onclick="toggleMenu()" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Search -->
+    <div class="md:hidden pb-3">
+      <div class="search-bar flex rounded-xl overflow-hidden border-2 border-gray-200">
+        <input type="search" placeholder="Search products, suppliers..." class="flex-1 px-3 py-2.5 text-sm focus:outline-none" />
+        <button class="btn-saffron text-white px-4 py-2.5 text-sm font-semibold">🔍</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 px-4 pb-4">
+    <div class="flex flex-col gap-3 pt-3">
+      <a href="#categories" class="text-sm font-medium text-gray-700 py-2 border-b border-gray-100" onclick="toggleMenu()">📦 All Categories</a>
+      <a href="#suppliers" class="text-sm font-medium text-gray-700 py-2 border-b border-gray-100" onclick="toggleMenu()">🏭 Verified Suppliers</a>
+      <a href="#how-it-works" class="text-sm font-medium text-gray-700 py-2 border-b border-gray-100" onclick="toggleMenu()">❓ How It Works</a>
+      <a href="#" class="text-sm font-medium text-gray-700 py-2 border-b border-gray-100">📝 Post Requirement</a>
+      <div class="flex gap-3 pt-1">
+        <a href="#" class="flex-1 text-center border-2 border-saffron-500 text-saffron-600 font-semibold text-sm py-2.5 rounded-xl">Sign In</a>
+        <a href="#" class="flex-1 text-center btn-saffron text-white font-semibold text-sm py-2.5 rounded-xl">Start Selling</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO SECTION ===================== -->
+<header class="hero-bg text-white py-16 md:py-24 px-4">
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6 fade-up delay-1">
+          <span class="pulse-dot w-2 h-2 bg-green-400 rounded-full"></span>
+          🇮🇳 India's Fastest Growing Wholesale Marketplace
+        </div>
+
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-5 fade-up delay-2">
+          Source Smarter.<br/>
+          <span class="text-gradient">Buy Wholesale.</span><br/>
+          Grow Faster.
+        </h1>
+
+        <p class="text-white/80 text-lg md:text-xl mb-8 leading-relaxed fade-up delay-3">
+          India's #1 B2B wholesale marketplace connecting <strong class="text-white">retailers, traders & businesses</strong> directly with verified manufacturers. Save up to <span class="text-saffron-300 font-bold">60% vs MRP</span> with no middlemen.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-4 mb-8 fade-up delay-4">
+          <div class="bg-white/10 backdrop-blur rounded-xl p-3 text-center border border-white/15">
+            <div class="font-display font-bold text-2xl text-saffron-300">10L+</div>
+            <div class="text-xs text-white/70 mt-0.5">Products Listed</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-xl p-3 text-center border border-white/15">
+            <div class="font-display font-bold text-2xl text-saffron-300">5L+</div>
+            <div class="text-xs text-white/70 mt-0.5">Verified Suppliers</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-xl p-3 text-center border border-white/15">
+            <div class="font-display font-bold text-2xl text-saffron-300">28+</div>
+            <div class="text-xs text-white/70 mt-0.5">States Covered</div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-4 fade-up delay-5">
+          <a href="#categories" class="btn-saffron text-white font-bold px-7 py-3.5 rounded-xl text-base inline-flex items-center gap-2">
+            🛒 Start Buying Now
+          </a>
+          <a href="#" class="btn-outline-white text-white font-bold px-7 py-3.5 rounded-xl text-base inline-flex items-center gap-2">
+            🏭 List Your Products
+          </a>
+        </div>
+
+        <!-- Trust signals -->
+        <div class="flex flex-wrap gap-4 mt-6 text-sm text-white/70 fade-up delay-5">
+          <span class="flex items-center gap-1.5">✅ GST Invoice</span>
+          <span class="flex items-center gap-1.5">🔒 Secure Payments</span>
+          <span class="flex items-center gap-1.5">🚚 Pan-India Delivery</span>
+          <span class="flex items-center gap-1.5">↩️ Easy Returns</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hidden md:flex flex-col gap-4">
+        <!-- Featured product cards -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-center fade-up delay-2">
+            <div class="text-5xl mb-3">👕</div>
+            <div class="font-semibold text-sm">Ready-Made Garments</div>
+            <div class="text-saffron-300 text-xs mt-1">From ₹45/piece</div>
+            <div class="mt-2 text-xs bg-green-500/20 text-green-300 rounded-full px-2 py-0.5 inline-block">2,340 Suppliers</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-center fade-up delay-3">
+            <div class="text-5xl mb-3">📱</div>
+            <div class="font-semibold text-sm">Electronics & Mobile</div>
+            <div class="text-saffron-300 text-xs mt-1">Up to 45% Off</div>
+            <div class="mt-2 text-xs bg-green-500/20 text-green-300 rounded-full px-2 py-0.5 inline-block">1,890 Suppliers</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-center fade-up delay-4">
+            <div class="text-5xl mb-3">🌾</div>
+            <div class="font-semibold text-sm">Agriculture & Food</div>
+            <div class="text-saffron-300 text-xs mt-1">Best Farm Prices</div>
+            <div class="mt-2 text-xs bg-green-500/20 text-green-300 rounded-full px-2 py-0.5 inline-block">3,120 Suppliers</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-center fade-up delay-5">
+            <div class="text-5xl mb-3">🔧</div>
+            <div class="font-semibold text-sm">Industrial Hardware</div>
+            <div class="text-saffron-300 text-xs mt-1">Bulk Discounts</div>
+            <div class="mt-2 text-xs bg-green-500/20 text-green-300 rounded-full px-2 py-0.5 inline-block">980 Suppliers</div>
+          </div>
+        </div>
+        <!-- Live order feed -->
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4">
+          <div class="text-xs text-white/60 mb-3 font-semibold uppercase tracking-wider">🔴 Live Orders</div>
+          <div class="space-y-2" id="live-feed">
+            <div class="flex items-center gap-3 text-sm">
+              <div class="w-8 h-8 bg-saffron-500/30 rounded-full flex items-center justify-center text-xs">R</div>
+              <div class="flex-1"><span class="font-medium">Rahul Traders, Mumbai</span> ordered <span class="text-saffron-300">500 pcs Cotton T-shirts</span></div>
+              <div class="text-white/50 text-xs">2m ago</div>
+            </div>
+            <div class="flex items-center gap-3 text-sm">
+              <div class="w-8 h-8 bg-blue-500/30 rounded-full flex items-center justify-center text-xs">S</div>
+              <div class="flex-1"><span class="font-medium">Sharma Enterprises, Delhi</span> ordered <span class="text-saffron-300">200 LED Bulbs</span></div>
+              <div class="text-white/50 text-xs">5m ago</div>
+            </div>
+            <div class="flex items-center gap-3 text-sm">
+              <div class="w-8 h-8 bg-green-500/30 rounded-full flex items-center justify-center text-xs">K</div>
+              <div class="flex-1"><span class="font-medium">Kumar Foods, Chennai</span> ordered <span class="text-saffron-300">1 Ton Basmati Rice</span></div>
+              <div class="text-white/50 text-xs">8m ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== TRUST STRIPE ===================== -->
+<div class="stripe-bg py-4 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap justify-center md:justify-between items-center gap-4 text-white text-sm font-medium">
+      <div class="flex items-center gap-2"><span class="text-xl">🏆</span> India's Most Trusted B2B Platform</div>
+      <div class="flex items-center gap-2"><span class="text-xl">🔒</span> 100% Secure Payments</div>
+      <div class="flex items-center gap-2"><span class="text-xl">✅</span> MSME Verified Suppliers</div>
+      <div class="flex items-center gap-2"><span class="text-xl">📦</span> Real-time Order Tracking</div>
+      <div class="flex items-center gap-2"><span class="text-xl">📞</span> Dedicated Business Support</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== STATS SECTION ===================== -->
+<section class="py-12 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="stat-card rounded-2xl p-6 text-center shadow-sm border border-gray-100">
+        <div class="text-4xl mb-2">🏭</div>
+        <div class="font-display font-extrabold text-3xl text-navy-900" style="color:#0f1f5c;">5,00,000+</div>
+        <div class="text-gray-600 text-sm mt-1 font-medium">Verified Suppliers</div>
+        <div class="text-xs text-gray-400 mt-1">Across 500+ cities</div>
+      </div>
+      <div class="stat-card rounded-2xl p-6 text-center shadow-sm border border-gray-100">
+        <div class="text-4xl mb-2">📦</div>
+        <div class="font-display font-extrabold text-3xl" style="color:#0f1f5c;">10,00,000+</div>
+        <div class="text-gray-600 text-sm mt-1 font-medium">Products Listed</div>
+        <div class="text-xs text-gray-400 mt-1">In 500+ categories</div>
+      </div>
+      <div class="stat-card rounded-2xl p-6 text-center shadow-sm border border-gray-100">
+        <div class="text-4xl mb-2">🤝</div>
+        <div class="font-display font-extrabold text-3xl" style="color:#0f1f5c;">20 Lakh+</div>
+        <div class="text-gray-600 text-sm mt-1 font-medium">Happy Buyers</div>
+        <div class="text-xs text-gray-400 mt-1">Businesses & individuals</div>
+      </div>
+      <div class="stat-card rounded-2xl p-6 text-center shadow-sm border border-gray-100">
+        <div class="text-4xl mb-2">💰</div>
+        <div class="font-display font-extrabold text-3xl" style="color:#0f1f5c;">₹500 Cr+</div>
+        <div class="text-gray-600 text-sm mt-1 font-medium">GMV Monthly</div>
+        <div class="text-xs text-gray-400 mt-1">Growing 3x year-on-year</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CATEGORIES ===================== -->
+<section id="categories" class="py-14 px-4 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-8">
+      <h2 class="font-display font-bold text-3xl md:text-4xl section-heading" style="color:#0f1f5c;">Shop by Category</h2>
+      <p class="text-gray-600 mt-4 text-lg">Explore India's most comprehensive wholesale product range across all industries</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <!-- Category Cards -->
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">👕</div>
+        <div class="font-semibold text-sm text-gray-800">Clothing &amp; Textiles</div>
+        <div class="text-xs text-saffron-600 mt-1">1.2L+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">📱</div>
+        <div class="font-semibold text-sm text-gray-800">Electronics</div>
+        <div class="text-xs text-saffron-600 mt-1">85K+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">🌾</div>
+        <div class="font-semibold text-sm text-gray-800">Agriculture &amp; Food</div>
+        <div class="text-xs text-saffron-600 mt-1">2.1L+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">🔧</div>
+        <div class="font-semibold text-sm text-gray-800">Industrial Tools</div>
+        <div class="text-xs text-saffron-600 mt-1">95K+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">💄</div>
+        <div class="font-semibold text-sm text-gray-800">Beauty &amp; Personal Care</div>
+        <div class="text-xs text-saffron-600 mt-1">60K+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">🏠</div>
+        <div class="font-semibold text-sm text-gray-800">Home &amp; Furniture</div>
+        <div class="text-xs text-saffron-600 mt-1">1.5L+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">🍜</div>
+        <div class="font-semibold text-sm text-gray-800">FMCG &amp; Grocery</div>
+        <div class="text-xs text-saffron-600 mt-1">3.2L+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">🏗️</div>
+        <div class="font-semibold text-sm text-gray-800">Construction</div>
+        <div class="text-xs text-saffron-600 mt-1">75K+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">💊</div>
+        <div class="font-semibold text-sm text-gray-800">Pharma &amp; Healthcare</div>
+        <div class="text-xs text-saffron-600 mt-1">40K+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">🚗</div>
+        <div class="font-semibold text-sm text-gray-800">Auto Parts</div>
+        <div class="text-xs text-saffron-600 mt-1">1.1L+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer">
+        <div class="text-4xl mb-2">📚</div>
+        <div class="font-semibold text-sm text-gray-800">Stationery &amp; Office</div>
+        <div class="text-xs text-saffron-600 mt-1">55K+ Products</div>
+      </a>
+      <a href="#" class="emoji-card rounded-2xl p-4 text-center cursor-pointer bg-gradient-to-br from-saffron-50 to-saffron-100 border-saffron-200">
+        <div class="text-4xl mb-2">🔍</div>
+        <div class="font-semibold text-sm text-saffron-700">View All 500+ Categories</div>
+        <div class="text-xs text-saffron-500 mt-1">Explore More →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRENDING PRODUCTS ===================== -->
+<section class="py-14 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl section-heading" style="color:#0f1f5c;">🔥 Trending Products</h2>
+        <p class="text-gray-600 mt-4">Most ordered products this week across India</p>
+      </div>
+      <a href="#" class="text-saffron-600 font-semibold text-sm hover:text-saffron-700 hidden md:block">View All Products →</a>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <!-- Product cards -->
+      <article class="prod-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center text-5xl">📱</div>
+        <div class="p-3">
+          <div class="verified-badge text-white text-xs px-2 py-0.5 rounded-full inline-block mb-1.5">✓ Verified</div>
+          <h3 class="font-semibold text-sm text-gray-800 leading-tight">Smartphone Accessories Combo Pack</h3>
+          <div class="text-xs text-gray-500 mt-1">Min. Order: 50 pcs</div>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="font-bold text-saffron-600">₹85/pc</span>
+            <span class="text-xs text-gray-400 line-through">₹150</span>
+          </div>
+          <div class="text-xs text-green-600 font-medium">43% OFF MRP</div>
+          <button class="w-full mt-3 btn-saffron text-white text-xs font-semibold py-2 rounded-lg">Get Best Price</button>
+        </div>
+      </article>
+
+      <article class="prod-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 text-center text-5xl">👕</div>
+        <div class="p-3">
+          <div class="verified-badge text-white text-xs px-2 py-0.5 rounded-full inline-block mb-1.5">✓ Verified</div>
+          <h3 class="font-semibold text-sm text-gray-800 leading-tight">Plain Round Neck T-Shirts (180 GSM)</h3>
+          <div class="text-xs text-gray-500 mt-1">Min. Order: 100 pcs</div>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="font-bold text-saffron-600">₹65/pc</span>
+            <span class="text-xs text-gray-400 line-through">₹120</span>
+          </div>
+          <div class="text-xs text-green-600 font-medium">46% OFF MRP</div>
+          <button class="w-full mt-3 btn-saffron text-white text-xs font-semibold py-2 rounded-lg">Get Best Price</button>
+        </div>
+      </article>
+
+      <article class="prod-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 text-center text-5xl">💡</div>
+        <div class="p-3">
+          <div class="verified-badge text-white text-xs px-2 py-0.5 rounded-full inline-block mb-1.5">✓ Verified</div>
+          <h3 class="font-semibold text-sm text-gray-800 leading-tight">9W LED Bulb – BIS Certified (Carton of 50)</h3>
+          <div class="text-xs text-gray-500 mt-1">Min. Order: 1 Carton</div>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="font-bold text-saffron-600">₹38/pc</span>
+            <span class="text-xs text-gray-400 line-through">₹80</span>
+          </div>
+          <div class="text-xs text-green-600 font-medium">52% OFF MRP</div>
+          <button class="w-full mt-3 btn-saffron text-white text-xs font-semibold py-2 rounded-lg">Get Best Price</button>
+        </div>
+      </article>
+
+      <article class="prod-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 text-center text-5xl">🌾</div>
+        <div class="p-3">
+          <div class="verified-badge text-white text-xs px-2 py-0.5 rounded-full inline-block mb-1.5">✓ Verified</div>
+          <h3 class="font-semibold text-sm text-gray-800 leading-tight">Basmati Rice 1121 – Extra Long Grain (50 Kg Bag)</h3>
+          <div class="text-xs text-gray-500 mt-1">Min. Order: 10 Bags</div>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="font-bold text-saffron-600">₹3,200/bag</span>
+            <span class="text-xs text-gray-400 line-through">₹4,500</span>
+          </div>
+          <div class="text-xs text-green-600 font-medium">29% OFF MRP</div>
+          <button class="w-full mt-3 btn-saffron text-white text-xs font-semibold py-2 rounded-lg">Get Best Price</button>
+        </div>
+      </article>
+
+      <article class="prod-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 text-center text-5xl">🧴</div>
+        <div class="p-3">
+          <div class="verified-badge text-white text-xs px-2 py-0.5 rounded-full inline-block mb-1.5">✓ Verified</div>
+          <h3 class="font-semibold text-sm text-gray-800 leading-tight">Aloe Vera Gel (500ml, Set of 24)</h3>
+          <div class="text-xs text-gray-500 mt-1">Min. Order: 24 Units</div>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="font-bold text-saffron-600">₹72/unit</span>
+            <span class="text-xs text-gray-400 line-through">₹130</span>
+          </div>
+          <div class="text-xs text-green-600 font-medium">45% OFF MRP</div>
+          <button class="w-full mt-3 btn-saffron text-white text-xs font-semibold py-2 rounded-lg">Get Best Price</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="text-center mt-6 md:hidden">
+      <a href="#" class="text-saffron-600 font-semibold text-sm">View All Products →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY GATIMART ===================== -->
+<section class="py-14 px-4" style="background: linear-gradient(135deg, #0f1f5c 0%, #1a3a7c 100%);">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-3">Why 20 Lakh+ Businesses Trust Gatimart</h2>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto">We're more than a marketplace — we're your dedicated sourcing partner committed to helping Indian businesses grow and thrive.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-saffron-500/20 flex items-center justify-center text-3xl mb-4">✅</div>
+        <h3 class="font-display font-bold text-xl text-white mb-2">100% Verified Suppliers</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Every supplier on Gatimart undergoes rigorous MSME verification, GST validation, and quality audits. Your business is always protected.</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-saffron-500/20 flex items-center justify-center text-3xl mb-4">💰</div>
+        <h3 class="font-display font-bold text-xl text-white mb-2">Factory-Direct Pricing</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Cut out the middlemen. Buy directly from manufacturers and distributors at wholesale prices — saving your business up to 60% over MRP.</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-saffron-500/20 flex items-center justify-center text-3xl mb-4">🔒</div>
+        <h3 class="font-display font-bold text-xl text-white mb-2">Secure Trade Assurance</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Your payment is only released to the supplier after you confirm receipt of goods. Dispute resolution within 48 hours — guaranteed.</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-saffron-500/20 flex items-center justify-center text-3xl mb-4">🚚</div>
+        <h3 class="font-display font-bold text-xl text-white mb-2">Pan-India Logistics Network</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Partnered with 50+ leading logistics companies for reliable, trackable delivery to 19,000+ pin codes across all 28 states and 8 UTs.</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-saffron-500/20 flex items-center justify-center text-3xl mb-4">📄</div>
+        <h3 class="font-display font-bold text-xl text-white mb-2">GST-Ready Invoicing</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Every transaction comes with GST-compliant invoices, helping you claim input tax credit and maintain clean business accounting records.</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-all">
+        <div class="w-14 h-14 rounded-2xl bg-saffron-500/20 flex items-center justify-center text-3xl mb-4">📞</div>
+        <h3 class="font-display font-bold text-xl text-white mb-2">Dedicated Business Support</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Our team of sourcing experts is available in Hindi and English, 7 days a week. Get personalised help finding the right suppliers for your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section id="how-it-works" class="py-14 px-4 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="font-display font-bold text-3xl md:text-4xl inline-block section-heading" style="color:#0f1f5c;">How Gatimart Works</h2>
+      <p class="text-gray-600 mt-5 text-lg max-w-xl mx-auto">Start sourcing wholesale products for your business in 4 simple steps. No experience required.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="text-center relative step-line">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 relative z-10" style="background:linear-gradient(135deg,#ff6f0f,#c73b07);">🔍</div>
+        <div class="w-8 h-8 rounded-full bg-saffron-100 text-saffron-700 font-bold text-sm flex items-center justify-center mx-auto mb-3">1</div>
+        <h3 class="font-display font-bold text-lg text-gray-800 mb-2">Search &amp; Discover</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Browse 10 lakh+ products across 500+ categories or post your requirement to get quotes from verified suppliers.</p>
+      </div>
+      <div class="text-center relative step-line">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4" style="background:linear-gradient(135deg,#ff6f0f,#c73b07);">🤝</div>
+        <div class="w-8 h-8 rounded-full bg-saffron-100 text-saffron-700 font-bold text-sm flex items-center justify-center mx-auto mb-3">2</div>
+        <h3 class="font-display font-bold text-lg text-gray-800 mb-2">Connect &amp; Negotiate</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Chat directly with suppliers, request samples, negotiate bulk pricing, and finalise your purchase terms securely.</p>
+      </div>
+      <div class="text-center relative step-line">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4" style="background:linear-gradient(135deg,#ff6f0f,#c73b07);">💳</div>
+        <div class="w-8 h-8 rounded-full bg-saffron-100 text-saffron-700 font-bold text-sm flex items-center justify-center mx-auto mb-3">3</div>
+        <h3 class="font-display font-bold text-lg text-gray-800 mb-2">Pay Securely</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Pay via UPI, NEFT, credit/debit card, or business credit line. Your money is held in escrow until goods are delivered safely.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4" style="background:linear-gradient(135deg,#ff6f0f,#c73b07);">📦</div>
+        <div class="w-8 h-8 rounded-full bg-saffron-100 text-saffron-700 font-bold text-sm flex items-center justify-center mx-auto mb-3">4</div>
+        <h3 class="font-display font-bold text-lg text-gray-800 mb-2">Receive &amp; Grow</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Track your shipment in real-time, receive your goods, confirm delivery and grow your business with confidence.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="#" class="btn-saffron text-white font-bold px-8 py-4 rounded-xl text-base inline-flex items-center gap-2">
+        🚀 Start Sourcing Today – It's Free
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TOP SUPPLIERS ===================== -->
+<section id="suppliers" class="py-14 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl section-heading" style="color:#0f1f5c;">🏆 Top Verified Suppliers</h2>
+        <p class="text-gray-600 mt-4">India's most trusted manufacturers and distributors — all verified, all ready to supply</p>
+      </div>
+      <a href="#" class="text-saffron-600 font-semibold text-sm hover:text-saffron-700 hidden md:block">View All Suppliers →</a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Supplier cards -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center text-2xl shrink-0">🏭</div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <h3 class="font-bold text-gray-800">Tiruppur Knit Co.</h3>
+              <span class="verified-badge text-white text-xs px-2 py-0.5 rounded-full">✓</span>
+            </div>
+            <div class="text-xs text-gray-500">Tiruppur, Tamil Nadu • Est. 1998</div>
+            <div class="flex items-center gap-1 mt-1">
+              <span class="text-yellow-400 text-sm">★★★★★</span>
+              <span class="text-xs text-gray-500">(4.9 · 2,340 reviews)</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Cotton T-shirts</span>
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Polo Shirts</span>
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Hoodies</span>
+        </div>
+        <div class="mt-3 grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="bg-saffron-50 rounded-lg py-2"><div class="font-bold text-saffron-700">100K+</div><div class="text-gray-500">Monthly Orders</div></div>
+          <div class="bg-green-50 rounded-lg py-2"><div class="font-bold text-green-700">98%</div><div class="text-gray-500">On-Time Delivery</div></div>
+          <div class="bg-blue-50 rounded-lg py-2"><div class="font-bold text-blue-700">MOQ 50</div><div class="text-gray-500">Min. Order</div></div>
+        </div>
+        <button class="w-full mt-4 btn-saffron text-white text-sm font-semibold py-2.5 rounded-xl">Contact Supplier</button>
+      </div>
+
+      <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-yellow-100 flex items-center justify-center text-2xl shrink-0">⚡</div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <h3 class="font-bold text-gray-800">Rajkot Electricals Pvt. Ltd.</h3>
+              <span class="verified-badge text-white text-xs px-2 py-0.5 rounded-full">✓</span>
+            </div>
+            <div class="text-xs text-gray-500">Rajkot, Gujarat • Est. 2004</div>
+            <div class="flex items-center gap-1 mt-1">
+              <span class="text-yellow-400 text-sm">★★★★★</span>
+              <span class="text-xs text-gray-500">(4.8 · 1,890 reviews)</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">LED Lights</span>
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Switchgear</span>
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Cables &amp; Wires</span>
+        </div>
+        <div class="mt-3 grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="bg-saffron-50 rounded-lg py-2"><div class="font-bold text-saffron-700">80K+</div><div class="text-gray-500">Monthly Orders</div></div>
+          <div class="bg-green-50 rounded-lg py-2"><div class="font-bold text-green-700">96%</div><div class="text-gray-500">On-Time Delivery</div></div>
+          <div class="bg-blue-50 rounded-lg py-2"><div class="font-bold text-blue-700">MOQ 100</div><div class="text-gray-500">Min. Order</div></div>
+        </div>
+        <button class="w-full mt-4 btn-saffron text-white text-sm font-semibold py-2.5 rounded-xl">Contact Supplier</button>
+      </div>
+
+      <div class="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center text-2xl shrink-0">🌾</div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <h3 class="font-bold text-gray-800">Punjab Agro Exports</h3>
+              <span class="verified-badge text-white text-xs px-2 py-0.5 rounded-full">✓</span>
+            </div>
+            <div class="text-xs text-gray-500">Amritsar, Punjab • Est. 1992</div>
+            <div class="flex items-center gap-1 mt-1">
+              <span class="text-yellow-400 text-sm">★★★★½</span>
+              <span class="text-xs text-gray-500">(4.7 · 3,120 reviews)</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Basmati Rice</span>
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Wheat Flour</span>
+          <span class="bg-gray-100 text-gray-600 text-xs px-2.5 py-1 rounded-full">Pulses</span>
+        </div>
+        <div class="mt-3 grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="bg-saffron-50 rounded-lg py-2"><div class="font-bold text-saffron-700">200 MT</div><div class="text-gray-500">Monthly Supply</div></div>
+          <div class="bg-green-50 rounded-lg py-2"><div class="font-bold text-green-700">99%</div><div class="text-gray-500">On-Time Delivery</div></div>
+          <div class="bg-blue-50 rounded-lg py-2"><div class="font-bold text-blue-700">MOQ 10</div><div class="text-gray-500">Bags (500 kg)</div></div>
+        </div>
+        <button class="w-full mt-4 btn-saffron text-white text-sm font-semibold py-2.5 rounded-xl">Contact Supplier</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POST REQUIREMENT BANNER ===================== -->
+<section class="py-14 px-4 bg-gray-50">
+  <div class="max-w-4xl mx-auto">
+    <div class="rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden" style="background:linear-gradient(135deg,#ff6f0f 0%,#c73b07 60%,#0f1f5c 100%);">
+      <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 20% 80%, white 1px, transparent 1px),radial-gradient(circle at 80% 20%, white 1px, transparent 1px);background-size:40px 40px;"></div>
+      <div class="relative z-10">
+        <div class="text-5xl mb-4">📋</div>
+        <h2 class="font-display font-extrabold text-3xl md:text-4xl mb-3">Can't Find What You Need?</h2>
+        <p class="text-white/85 text-lg mb-8 max-w-lg mx-auto">Post your requirement for free and receive competitive quotes from verified suppliers within 24 hours. Used by 3 lakh+ businesses every month.</p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="handleRequirement(event)">
+          <input type="text" placeholder="Describe your product requirement..." class="flex-1 px-5 py-3.5 rounded-xl text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white/50" />
+          <button type="submit" class="bg-white text-saffron-600 font-bold px-6 py-3.5 rounded-xl text-sm hover:bg-saffron-50 transition-colors shrink-0">Post Requirement →</button>
+        </form>
+        <p class="text-white/60 text-xs mt-4">Free · No registration required · Get quotes in 24 hours</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="py-14 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="font-display font-bold text-3xl md:text-4xl inline-block section-heading" style="color:#0f1f5c;">What Our Buyers Say</h2>
+      <p class="text-gray-600 mt-5 text-lg">Real stories from real Indian businesses transforming their sourcing with Gatimart</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <blockquote class="testi-card bg-gray-50 rounded-2xl p-6">
+        <div class="flex items-center gap-1 mb-3">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4">"Gatimart completely changed how I source clothing for my boutique. I'm getting the same quality garments at 45% less cost than my previous supplier. The verification process gives me total peace of mind."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center font-bold text-pink-600">P</div>
+          <div>
+            <div class="font-semibold text-sm text-gray-800">Priya Agarwal</div>
+            <div class="text-xs text-gray-500">Boutique Owner, Jaipur</div>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="testi-card bg-gray-50 rounded-2xl p-6">
+        <div class="flex items-center gap-1 mb-3">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4">"As a kirana store owner, I was spending too much time dealing with multiple distributors. Gatimart gives me everything — FMCG, snacks, beverages — all with GST bills and doorstep delivery. My margins have improved by 20%."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">R</div>
+          <div>
+            <div class="font-semibold text-sm text-gray-800">Ramesh Sharma</div>
+            <div class="text-xs text-gray-500">Kirana Store Owner, Kanpur</div>
+          </div>
+        </div>
+      </blockquote>
+
+      <blockquote class="testi-card bg-gray-50 rounded-2xl p-6">
+        <div class="flex items-center gap-1 mb-3">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-gray-700 text-sm leading-relaxed mb-4">"I run a construction business in Hyderabad and finding quality hardware at bulk prices was always a challenge. Gatimart's industrial category has 10x more options than any local market. Saved ₹8 lakhs in one month alone!"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center font-bold text-orange-600">V</div>
+          <div>
+            <div class="font-semibold text-sm text-gray-800">Venkat Reddy</div>
+            <div class="text-xs text-gray-500">Construction Contractor, Hyderabad</div>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MEDIA & PARTNERS ===================== -->
+<section class="py-10 px-4 bg-gray-50 border-y border-gray-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-6">
+      <p class="text-gray-500 text-sm font-semibold uppercase tracking-widest">As Featured In &amp; Our Partners</p>
+    </div>
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+      <div class="font-bold text-xl text-gray-500 font-display">Economic Times</div>
+      <div class="font-bold text-xl text-gray-500 font-display">YourStory</div>
+      <div class="font-bold text-xl text-gray-500 font-display">Inc42</div>
+      <div class="font-bold text-xl text-gray-500 font-display">NASSCOM</div>
+      <div class="font-bold text-xl text-gray-500 font-display">Startup India</div>
+      <div class="font-bold text-xl text-gray-500 font-display">MSME Ministry</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BLOG / RESOURCES ===================== -->
+<section class="py-14 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl section-heading" style="color:#0f1f5c;">📖 Business Resources</h2>
+        <p class="text-gray-600 mt-4">Expert guides and insights to help Indian businesses source smarter and grow faster</p>
+      </div>
+      <a href="#" class="text-saffron-600 font-semibold text-sm hidden md:block">View All Articles →</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="group cursor-pointer">
+        <div class="bg-gradient-to-br from-saffron-50 to-orange-100 rounded-2xl h-44 flex items-center justify-center text-6xl mb-4 group-hover:scale-105 transition-transform">📊</div>
+        <div class="text-xs text-saffron-600 font-semibold uppercase tracking-wider mb-2">Sourcing Guide</div>
+        <h3 class="font-display font-bold text-lg text-gray-800 mb-2 group-hover:text-saffron-600 transition-colors">How to Find Reliable Wholesale Suppliers in India: The Ultimate 2025 Guide</h3>
+        <p class="text-gray-600 text-sm">Learn the proven framework used by 20 lakh+ Indian businesses to verify suppliers and get the best wholesale prices.</p>
+        <a href="#" class="text-saffron-600 font-semibold text-sm mt-3 inline-block">Read More →</a>
+      </article>
+
+      <article class="group cursor-pointer">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl h-44 flex items-center justify-center text-6xl mb-4 group-hover:scale-105 transition-transform">🏦</div>
+        <div class="text-xs text-saffron-600 font-semibold uppercase tracking-wider mb-2">Finance Tips</div>
+        <h3 class="font-display font-bold text-lg text-gray-800 mb-2 group-hover:text-saffron-600 transition-colors">GST Input Tax Credit for Wholesale Purchases: Save More on Every Order</h3>
+        <p class="text-gray-600 text-sm">A step-by-step guide to claiming ITC on your wholesale purchases and reducing your tax liability significantly.</p>
+        <a href="#" class="text-saffron-600 font-semibold text-sm mt-3 inline-block">Read More →</a>
+      </article>
+
+      <article class="group cursor-pointer">
+        <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl h-44 flex items-center justify-center text-6xl mb-4 group-hover:scale-105 transition-transform">📈</div>
+        <div class="text-xs text-saffron-600 font-semibold uppercase tracking-wider mb-2">Business Growth</div>
+        <h3 class="font-display font-bold text-lg text-gray-800 mb-2 group-hover:text-saffron-600 transition-colors">Top 10 Profitable Wholesale Products to Sell in India in 2025</h3>
+        <p class="text-gray-600 text-sm">Market analysis and data-driven insights on the most profitable product categories for small and medium businesses.</p>
+        <a href="#" class="text-saffron-600 font-semibold text-sm mt-3 inline-block">Read More →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APP DOWNLOAD ===================== -->
+<section class="py-14 px-4" style="background:linear-gradient(135deg,#fff8ed 0%,#ffefd4 100%);">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="text-5xl mb-4">📲</div>
+        <h2 class="font-display font-bold text-3xl md:text-4xl mb-4" style="color:#0f1f5c;">Download the Gatimart App</h2>
+        <p class="text-gray-700 text-lg mb-6 leading-relaxed">Manage your wholesale orders, track shipments, chat with suppliers, and discover new products — all from your smartphone in Hindi or English.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center gap-3 text-gray-700"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✓</span> Get exclusive app-only deals and discounts</li>
+          <li class="flex items-center gap-3 text-gray-700"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✓</span> Real-time shipment tracking and notifications</li>
+          <li class="flex items-center gap-3 text-gray-700"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✓</span> Voice search in Hindi – source products hands-free</li>
+          <li class="flex items-center gap-3 text-gray-700"><span class="w-6 h-6 rounded-full bg-green-500 text-white flex items-center justify-center text-xs">✓</span> Manage multiple businesses from one account</li>
+        </ul>
+        <div class="flex gap-4">
+          <a href="#" class="flex items-center gap-3 bg-gray-900 text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition-colors">
+            <span class="text-2xl">🍎</span>
+            <div><div class="text-xs opacity-70">Download on the</div><div class="font-bold text-sm">App Store</div></div>
+          </a>
+          <a href="#" class="flex items-center gap-3 bg-gray-900 text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition-colors">
+            <span class="text-2xl">🤖</span>
+            <div><div class="text-xs opacity-70">Get it on</div><div class="font-bold text-sm">Google Play</div></div>
+          </a>
+        </div>
+        <div class="flex items-center gap-2 mt-4 text-sm text-gray-500">
+          <span class="text-yellow-400">★★★★★</span> 4.8/5 · 2 Lakh+ Reviews · #1 B2B App in India
+        </div>
+      </div>
+      <div class="hidden md:flex justify-center">
+        <div class="w-64 h-96 bg-white rounded-3xl shadow-2xl border-4 border-gray-200 flex flex-col overflow-hidden">
+          <div class="h-8 bg-gray-100 flex items-center justify-center">
+            <div class="w-16 h-2 bg-gray-300 rounded-full"></div>
+          </div>
+          <div class="flex-1 p-3" style="background:linear-gradient(135deg,#0f1f5c,#1a3a7c);">
+            <div class="text-white font-display font-bold text-center text-xl mb-3">Gati<span class="text-saffron-400">mart</span></div>
+            <div class="bg-white/10 rounded-xl p-3 mb-2">
+              <div class="text-white text-xs font-semibold mb-1">🔥 Today's Best Deals</div>
+              <div class="text-saffron-300 text-xs">Cotton T-shirts – ₹65/pc</div>
+              <div class="text-saffron-300 text-xs">LED Bulbs – ₹38/pc</div>
+            </div>
+            <div class="grid grid-cols-3 gap-1.5 mb-2">
+              <div class="bg-white/10 rounded-lg p-2 text-center"><div class="text-xl">👕</div><div class="text-white text-xs mt-1">Clothes</div></div>
+              <div class="bg-white/10 rounded-lg p-2 text-center"><div class="text-xl">📱</div><div class="text-white text-xs mt-1">Electr.</div></div>
+              <div class="bg-white/10 rounded-lg p-2 text-center"><div class="text-xl">🌾</div><div class="text-white text-xs mt-1">Food</div></div>
+            </div>
+            <div class="bg-saffron-500 rounded-xl p-2.5 text-center text-white text-xs font-bold">🛒 Browse 10L+ Products</div>
+          </div>
+          <div class="h-12 bg-gray-100 flex items-center justify-center gap-4 px-4">
+            <div class="text-xl">🏠</div><div class="text-xl">🔍</div><div class="text-xl">📦</div><div class="text-xl">👤</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="py-14 px-4 bg-white" itemscope itemtype="https://schema.org/FAQPage">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="font-display font-bold text-3xl md:text-4xl inline-block section-heading" style="color:#0f1f5c;">Frequently Asked Questions</h2>
+    </div>
+    <div class="space-y-4" id="faq-container">
+      <!-- FAQ items injected via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="py-16 px-4" style="background:linear-gradient(135deg,#0f1f5c 0%,#c73b07 100%);">
+  <div class="max-w-3xl mx-auto text-center text-white">
+    <div class="text-6xl mb-6">🚀</div>
+    <h2 class="font-display font-extrabold text-4xl md:text-5xl mb-5">Ready to Transform Your Business?</h2>
+    <p class="text-white/80 text-xl mb-8 max-w-xl mx-auto">Join 20 lakh+ Indian businesses already sourcing smarter on Gatimart. Free to join. No subscription fees. Start saving today.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#" class="bg-white text-saffron-600 font-bold px-8 py-4 rounded-xl text-base hover:bg-saffron-50 transition-colors inline-flex items-center gap-2">
+        🛒 Start Buying Wholesale
+      </a>
+      <a href="#" class="btn-outline-white text-white font-bold px-8 py-4 rounded-xl text-base inline-flex items-center gap-2">
+        🏭 List Your Products Free
+      </a>
+    </div>
+    <p class="text-white/50 text-sm mt-6">✓ Free Registration &nbsp;✓ No Hidden Charges &nbsp;✓ GST Invoice on Every Order</p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-gray-900 text-gray-300 px-4 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+      <!-- Brand -->
+      <div class="col-span-2 md:col-span-1 lg:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white font-display font-bold text-xl" style="background:linear-gradient(135deg,#ff6f0f,#c73b07);">G</div>
+          <span class="font-display font-bold text-2xl text-white">Gati<span class="text-saffron-400">mart</span></span>
+        </div>
+        <p class="text-sm leading-relaxed mb-4">India's #1 wholesale B2B marketplace connecting buyers directly with verified manufacturers and suppliers across all categories. Powered by technology. Trusted by 20 Lakh+ businesses.</p>
+        <div class="text-xs text-gray-500 mb-4">🇮🇳 Proudly Made in India &nbsp;|&nbsp; DPIIT Recognised Startup</div>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-saffron-600 transition-colors text-sm">f</a>
+          <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-saffron-600 transition-colors text-sm">in</a>
+          <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-saffron-600 transition-colors text-sm">tw</a>
+          <a href="#" class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-saffron-600 transition-colors text-sm">yt</a>
+        </div>
+      </div>
+
+      <!-- Buyers -->
+      <div>
+        <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wide">For Buyers</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Browse Products</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Post Requirement</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Verified Suppliers</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Bulk Buying Guide</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Track Order</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Buyer Protection</a></li>
+        </ul>
+      </div>
+
+      <!-- Sellers -->
+      <div>
+        <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wide">For Suppliers</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Sell on Gatimart</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Seller Dashboard</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Verification Process</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Pricing Plans</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Seller Learning Center</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Advertise Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wide">Company</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">About Us</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Press &amp; Media</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Careers – We're Hiring!</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Blog &amp; Resources</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Partner Program</a></li>
+          <li><a href="#" class="hover:text-saffron-400 transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Payment badges -->
+    <div class="border-t border-gray-800 pt-8 pb-4">
+      <div class="flex flex-wrap justify-between items-center gap-4">
+        <div>
+          <div class="text-xs text-gray-500 mb-2 uppercase tracking-wider">Accepted Payments</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">UPI</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">NEFT/RTGS</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">Credit Card</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">Debit Card</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">Net Banking</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">EMI</span>
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="text-xs text-gray-500 mb-2 uppercase tracking-wider">Certifications &amp; Security</div>
+          <div class="flex flex-wrap gap-2 justify-end">
+            <span class="bg-gray-800 text-green-400 text-xs px-3 py-1.5 rounded-lg">🔒 SSL Secured</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">ISO 27001</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">RBI Compliant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+      <p>© 2025 Gatimart Technologies Pvt. Ltd. All rights reserved. CIN: U74999UP2022PTC158000</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-gray-300 transition-colors">Terms of Use</a>
+        <a href="#" class="hover:text-gray-300 transition-colors">Sitemap</a>
+        <a href="#" class="hover:text-gray-300 transition-colors">Grievance Officer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STICKY WHATSAPP CTA ===================== -->
+<a href="https://wa.me/911800123456" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl hover:bg-green-600 hover:scale-110 transition-all" aria-label="Chat on WhatsApp">
+  💬
+</a>
+
+<!-- ===================== SCROLL TO TOP ===================== -->
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-6 left-6 z-50 w-12 h-12 text-white rounded-full shadow-xl items-center justify-center text-lg hidden hover:scale-110 transition-all" style="background:linear-gradient(135deg,#ff6f0f,#c73b07);" aria-label="Scroll to top">
+  ↑
+</button>
+
+<script>
+  // Mobile menu toggle
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    menu.classList.toggle('hidden');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  }
+
+  // Navbar scroll shadow
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    const scrollBtn = document.getElementById('scroll-top');
+    if (window.scrollY > 50) {
+      nav.classList.add('nav-scrolled');
+      scrollBtn.classList.remove('hidden');
+      scrollBtn.classList.add('flex');
+    } else {
+      nav.classList.remove('nav-scrolled');
+      scrollBtn.classList.add('hidden');
+      scrollBtn.classList.remove('flex');
+    }
+  });
+
+  // FAQ accordion
+  const faqs = [
+    { q: "Is Gatimart free to use for buyers?", a: "Yes! Registering and browsing on Gatimart is completely free for buyers. You pay only for the products you purchase. There are no subscription fees, hidden charges, or platform commissions charged to buyers." },
+    { q: "How does Gatimart verify its suppliers?", a: "Every supplier undergoes a rigorous 5-step verification process: GST registration check, Aadhaar-linked business verification, physical address verification, product quality audit, and ongoing performance monitoring. Only suppliers who pass all checks receive our Verified badge." },
+    { q: "What is the minimum order quantity (MOQ) on Gatimart?", a: "MOQ varies by product and supplier. Many suppliers offer a low MOQ of 10-50 pieces for first-time buyers. You can filter products by MOQ on our platform. Bulk orders above certain quantities get additional discounts." },
+    { q: "Is my payment safe on Gatimart?", a: "Absolutely. All payments are processed through our Trade Assurance escrow system. Your money is held securely and only released to the supplier after you confirm receipt of goods in satisfactory condition. We are RBI-compliant and use 256-bit SSL encryption." },
+    { q: "Do I get a GST invoice for every order?", a: "Yes. Every purchase on Gatimart comes with a GST-compliant invoice from the supplier, allowing you to claim Input Tax Credit (ITC) and maintain accurate business records. This is one of the key advantages of sourcing through Gatimart." },
+    { q: "How long does delivery take?", a: "Delivery timelines depend on your location and the supplier's location. Most domestic orders are delivered within 3-7 working days. We partner with 50+ logistics providers including Blue Dart, Delhivery, and DTDC to ensure reliable Pan-India delivery to 19,000+ pin codes." }
+  ];
+
+  const faqContainer = document.getElementById('faq-container');
+  faqs.forEach((faq, i) => {
+    faqContainer.innerHTML += `
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border border-gray-200 rounded-2xl overflow-hidden">
+        <button onclick="toggleFaq(${i})" class="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition-colors">
+          <span itemprop="name" class="font-semibold text-gray-800 text-sm md:text-base">${faq.q}</span>
+          <span id="faq-icon-${i}" class="text-saffron-500 text-xl ml-3 shrink-0 transition-transform">+</span>
+        </button>
+        <div id="faq-ans-${i}" class="hidden px-5 pb-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text" class="text-gray-600 text-sm leading-relaxed">${faq.a}</p>
+        </div>
+      </div>
+    `;
+  });
+
+  function toggleFaq(i) {
+    const ans = document.getElementById(`faq-ans-${i}`);
+    const icon = document.getElementById(`faq-icon-${i}`);
+    const isOpen = !ans.classList.contains('hidden');
+    // Close all
+    faqs.forEach((_, j) => {
+      document.getElementById(`faq-ans-${j}`).classList.add('hidden');
+      document.getElementById(`faq-icon-${j}`).textContent = '+';
+      document.getElementById(`faq-icon-${j}`).style.transform = '';
+    });
+    if (!isOpen) {
+      ans.classList.remove('hidden');
+      icon.textContent = '−';
+    }
+  }
+
+  // Post requirement handler
+  function handleRequirement(e) {
+    e.preventDefault();
+    const input = e.target.querySelector('input');
+    if (input.value.trim()) {
+      alert('✅ Your requirement has been posted! You will receive quotes from verified suppliers within 24 hours. Please check your email.');
+      input.value = '';
+    }
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const href = a.getAttribute('href');
+      if (href && href !== '#') {
+        const el = document.querySelector(href);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
+  // Intersection observer for fade-up animations
+  const fadeEls = document.querySelectorAll('.fade-up');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  fadeEls.forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
